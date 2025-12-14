@@ -1,5 +1,9 @@
 # 🎮 Tic-Tac-Toe with AI (Console & GUI Versions)
 
+## Project Description (Paragraph Style)
+
+This project is a Python-based implementation of the classic Tic-Tac-Toe game, developed in both console and graphical user interface (GUI) variants, with support for Player vs Player (PvP) and Player vs Artificial Intelligence (PvAI) gameplay. The core game logic is implemented as a standalone engine using the Minimax algorithm enhanced with Alpha–Beta pruning, enabling the AI to make optimal decisions while maintaining efficient performance. The application follows clean software design principles by separating the game logic from the presentation layer. The GUI is built using Tkinter and features a modern dark-themed, center-aligned interface with intuitive navigation screens for mode selection, symbol selection, and gameplay.
+
 ## 📌 Project Overview
 
 This project is a **fully-featured Tic-Tac-Toe game** implemented in Python, available in **two variants**:
@@ -35,9 +39,9 @@ The project is structured following **clean software design principles**, with a
 ```
 project/
 │
-├── game_logic.py        # Core game engine (logic only)
-├── gui.py               # Tkinter GUI application
-├── console_game.py      # Console-based version (CLI)
+├── Game_Logic.py        # Core game engine (logic only)
+├── GUI.py               # Tkinter GUI application
+├── main.py              # Console-based version (CLI)
 └── README.md
 ```
 
@@ -135,11 +139,9 @@ To improve performance, **Alpha–Beta pruning** is applied to the Minimax algor
 ## 🏗️ Software Design Principles
 
 - **Separation of Concerns**
-  - `game_logic.py` contains only logic
-  - `gui.py` handles presentation and events
-
-- **Reusability**
-  - Same game engine powers both console and GUI versions
+  - `Game_Logic.py` contains only logic
+  - `GUI.py` handles presentation and events
+  - `main.py ` contains CLI version
 
 - **Scalability**
   - GUI can be replaced (e.g., PyQt, Web UI) without changing logic
@@ -153,37 +155,20 @@ To improve performance, **Alpha–Beta pruning** is applied to the Minimax algor
 
 ### Run Console Version
 ```bash
-python console_game.py
+python main.py
 ```
 
 ### Run GUI Version
 ```bash
-python gui.py
+python GUI.py
 ```
 
 Ensure Python 3 is installed.
 
 ---
 
-## 🎯 Future Enhancements
-
-- Difficulty levels (depth-limited Minimax)
-- Highlight winning line in GUI
-- Restart button & score tracking
-- Sound effects and animations
-- PyQt or Web-based UI port
-- Executable packaging (`.exe`)
-
----
-
 ## 👤 Author
 
 **Saurabh Jha**  
-Computer Science | AI & Software Development  
 
 ---
-
-## 📄 License
-
-This project is intended for **educational and learning purposes**.  
-Feel free to modify, extend, or reuse the code.
